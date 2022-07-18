@@ -61,6 +61,10 @@ nav {
   margin: 0 36px;
 }
 
+.navigation img{
+  margin-left: 20px;
+}
+
 .navigation a:hover{
   color: lightgreen;
 }
@@ -203,4 +207,55 @@ article {
   color: #FF4A60;
   background: #FFE4E8;
   border-radius: 15px;
+}
+
+@media screen and (max-width:576px) {
+  nav{
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+  }
+
+  .idea{
+    margin-top: 20px;
+  }
+
+  .navigation a{
+    margin: 0 5vw;
+  }
+
+  .top{
+    width: 100%;
+    height: 100%;
+  }
+
+  .top-players {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top-blog {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+ .bottom{
+    width: 100%;
+    height: 100%;
+  }
+
+  .course-cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .course-card {
+    width: 100%;
+    height: 100%;
+  }
+
+  .course-img img {
+    width: 100%;
+    height: 100%;
+  }
 }
